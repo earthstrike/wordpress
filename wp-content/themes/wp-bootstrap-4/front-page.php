@@ -1,39 +1,63 @@
 <?php
-
-/*if ( 'posts' == get_option( 'show_on_front' ) ) {
-    include( get_home_template() );
-}
-else*/ {
-    if ( ! is_page_template() ) {
-        get_header();
-
-        //get_template_part( 'template-parts/front-page/cover' );
-        //get_template_part( 'template-parts/front-page/services' );
-
-        ?>
-		
-        <?php if ( get_theme_mod( 'show_main_content', 1 ) ) : ?>
-
-        <section class="wp-bp-main-content">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-md-8">
-                        <?php while ( have_posts() ) : the_post(); ?>
-                            <h2 class="text-center mb-4"><?php the_title(); ?></h2>
-                            <?php wp_bootstrap_4_post_thumbnail(); ?>
-                            <?php the_content(); ?>
-                        <?php endwhile; ?>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <?php endif; ?>
-
-        <?php
-        get_footer();
-    }
-    else {
-        include( get_page_template() );
-    }
-}
+get_header();
 ?>
+  <div class="container">
+    <div class="row" style="margin-top: 5em;">
+      <div class="two columns placeholder">
+        <span>Logo</span>
+      </div>
+      <div class="ten columns">
+        <h1>EarthStrike · Jan 15, 2019</h1>
+        <div id="countdown" />
+      </div>
+    </div>
+
+    <div class="row" style="margin-top: 2em; text-align: justify;">
+      <div class="two columns">&nbsp;</div>
+      <div class="eight columns" style="font-size: 1.5em;">
+        <p>
+          Our environment is dying, and it's time for the people of the world to
+          stand up and finally do something about it.
+        </p>
+        <p style="font-weight: 700">
+          Join the rest of the world in a general strike, and demand action from
+          those who have the power to stop the destruction of our only home.
+        </p>
+      </div>
+    </div>
+
+    <div class="row row-sep" style="text-align: center;">
+      <h3>Join the movement</h3>
+    </div>
+
+    <div class="row">
+      <div class="two columns">&nbsp;</div>
+      <div class="four columns">
+        <form style="text-align: center; margin-bottom: 0;">
+          <input style="width: 100%" type="email" placeholder="Email to receive EarthStrike updates" />
+          <input style="width: 100%" class="cta-button" type="button" value="JOIN!" />
+        </form>
+      </div>
+      <div class="four columns" style="text-align: center;">
+          <a href="https://www.reddit.com/r/earthstrike">
+            <i class="social-icon fab fa-reddit-alien"></i>
+          </a>
+          <a href="https://twitter.com/strikeearth">
+            <i class="social-icon fab fa-twitter"></i>
+          </a>
+          <a href="https://discord.gg/EEUmQnU">
+            <i class="social-icon fab fa-discord"></i>
+          </a>
+      </div>
+    </div>
+
+    <div class="row row-sep placeholder">
+      <span>Big mission statement</span>
+    </div>
+  </div>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
+
