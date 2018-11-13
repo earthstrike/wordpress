@@ -7,8 +7,8 @@ else {
     if ( ! is_page_template() ) {
         get_header();
 
-        get_template_part( 'template-parts/front-page/cover' );
-        get_template_part( 'template-parts/front-page/services' );
+        //get_template_part( 'template-parts/front-page/cover' );
+        //get_template_part( 'template-parts/front-page/services' );
 
         ?>
 
