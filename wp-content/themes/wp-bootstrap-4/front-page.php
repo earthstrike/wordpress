@@ -20,9 +20,9 @@
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/skeleton.css">
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="assets/css/normalize.css">
+  <link rel="stylesheet" href="assets/css/skeleton.css">
+  <link rel="stylesheet" href="assets/css/main.css">
 
 
 
@@ -30,7 +30,7 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="img/favicon.png">
 
-  <script type="text/javascript" src="js/countdown.js" ></script>
+  <script type="text/javascript" src="assets/js/countdown.js" ></script>
   <script type="text/javascript">
      function onReady() {
        earthCounter("countdown"); 

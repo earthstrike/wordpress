@@ -1,0 +1,53 @@
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+.row-sep {
+    margin-top: 1em;
+    padding-top: 1em;
+    border-top: 1px solid #bbb;
+}
+
+.placeholder {
+    border-top: 1px solid #666;
+    border-left: 1px solid #666;
+    padding: 3em;
+}
+
+input[type="button"].cta-button {
+    color: #d9534f;
+    border: 2px solid #d9534f;
+}
+
+input[type="button"].cta-button:hover {
+    color: #fff;
+    border: 2px solid #d9534f;
+    background-color: #d9534f;
+}
+
+#countdown {
+    font-family: 'Montserrat', sans-serif;
+    font-size:18pt;
+}
+
+.social-icon {
+    color: #666;
+    font-size: 4em;
+    margin-right: 0.1em;
+    margin-bottom: 0.25em;
+}
+
+.social-icon:hover {
+    color: #222;
+}
