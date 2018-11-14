@@ -1,0 +1,279 @@
+.ssm-container{
+                width:90%;
+                margin-left: auto;
+                margin-right: auto;
+                background: #fff;
+            }
+            .ssm-header{
+                background: #6c2eb9;
+                height:18px;
+                padding-top:25px;
+                padding-bottom:25px;
+            }
+			.ssmbrand h1:before {
+    content: '\3c';
+    display: block;
+	float:left;
+	margin-top:-5px;
+    font-size: 32px;
+    font-family: 'etbuilder';
+    speak: none;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+	margin-right:10px;
+}
+.supportmail, .visitbt, .likebt {
+width: 60px;
+    height: 58px;
+    padding: 0;
+    text-align: center;
+    line-height: 58px;
+    position: relative;
+    right: 20px;
+    z-index: 50;
+    color: white;
+    background-color: #7e3bd0;
+    transition: all 0.3s;
+    text-decoration: none;
+    float: right;
+    }
+.supportmail:hover, .visitbt:hover, .likebt:hover{
+    background-color: #8F42ED;
+    color: #fff;
+}
+.supportmail:before {
+content: "\e010";
+position:relative;
+font-family: 'ETmodules';
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+}
+.visitbt:before{
+content: "\e0e2";
+position:relative;
+font-family: 'ETmodules';
+font-size: 16px;
+-webkit-font-smoothing: antialiased;
+}
+.likebt:before{
+    content: "\e093";
+position:relative;
+font-family: 'ETmodules';
+font-size: 16px;
+-webkit-font-smoothing: antialiased;
+}
+
+div.ssm-header div h1 {
+    font-weight: 300;
+    font-size: 22px;
+    color: rgb(255, 255, 255);
+    margin-top: 0px;
+}
+
+div.ssm-header {
+    margin-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: raleway;
+    border-radius: 4px 4px 0 0;
+}
+
+.ssmbrand {
+    width: 75%;
+    float: left;
+}
+
+.ssmcustomizerlink {
+    width: 25%;
+    float: right;
+    margin-top:-10px;
+}
+.ssmcustomizerlink a{
+    float: right;
+}
+div.ssm-header a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #8f42ed;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 5px;
+    border-left: 2px solid #7e3bd0;
+    border-bottom: 2px solid #7e3bd0;
+}
+
+.ssmnav {
+    background: #7e3bd0;
+    height: 58px;
+    padding: 0px;
+}
+.ssmnav div{
+    width: 50%;
+    float: left;
+}
+
+div.ssmtab {
+    overflow: hidden;
+}
+
+/* Style the links inside the tab */
+
+div.ssmtab a {
+    float: left;
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 20px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of links on hover */
+
+div.ssmtab a:hover {
+    background-color: #8f42ed;
+}
+
+/* Create an active/current tablink class */
+
+div.ssmtab a:focus, .ssmactive {
+    background-color: #8f42ed;
+}
+
+/* Style the tab content */
+
+.ssmtabcontent {
+    display: none;
+    padding: 0px 40px 40px;
+    border-top: none;
+    box-shadow: 0px 1px 3px 0px rgba( 0, 0, 0, 0.06 );
+    border-radius: 0 0 4px 4px;
+}
+.ssmtabcontent {
+    -webkit-animation: fadeEffect 1s;
+    animation: fadeEffect 1s; /* Fading effect takes 1 second */
+}
+
+@-webkit-keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+.ssmtitle {
+    background: #f1f5f9;
+    margin-left: -40px;
+    width:calc(100% + 80px);
+}
+.ssmtitle h3{
+    margin:0px;
+    color: #8E969E;
+    display: inline-block;
+    clear: both;
+    position: relative;
+    padding: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    background: #fff;
+}
+.ssmpanel {
+    background: #fff;
+    width: 100%;
+}
+.ssmpanel li{
+    display:inline-block;
+    margin-right: 3%;
+    width: 30%;
+    }
+.ssmcard {
+    width: 100%;
+    display: block;
+    margin-right: 3%;
+    background: #fff;
+    box-shadow: 0px 1px 3px 0px rgba( 0, 0, 0, 0.08 );
+}
+
+.ssmcard img {
+    width: 100%;
+    border-bottom: 3px solid #6c2eb9;
+    
+}
+a.ssmcard h4 {
+    font-size: 15px;
+    margin-top: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    color: #1e1e1e;
+    text-align: center;
+    text-decoration: none;
+}
+.style{
+    display: none;
+}
+.copied {
+     position: fixed!important;
+    top: 50%!important;
+    left: 50%!important;
+    transform: translate(-50%, -50%)!important;
+    background:rgba(35,0,0,0.77)!important;
+    padding:20px 30px 20px 30px!important;
+    font-size:20px!important;
+    font-weight:bold!important;
+    color:#fff!important;
+    border-radius:5px!important;
+    z-index:999!important;
+    display: none;
+    }
+
+li.ssm-card .div1, li.ssm-card .div2, li.ssm-card .div3, li.ssm-card .div4, li.ssm-card .div5, li.ssm-card .div6, li.ssm-card .div7, li.ssm-card .div8, li.ssm-card .div9, li.ssm-card .div10, li.ssm-card .div11, li.ssm-card .div12, 
+li.ssm-card .div13, li.ssm-card .div14, li.ssm-card .div15, li.ssm-card .div16, li.ssm-card .div17, li.ssm-card .div18, li.ssm-card .div19, li.ssm-card .div20, li.ssm-card .div21, li.ssm-card .div22, li.ssm-card .div23, li.ssm-card .div24, li.ssm-card .div25, 
+li.ssm-card .div26   {
+    font-size: 0!important;
+    height: 0!important;
+}
+
+li.ssm-card {
+    width: 30%!important; 
+    background: #f1f5f9!important;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)!important;
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1)!important;
+    overflow:auto!important;
+}
+
+li.ssm-card img {
+    width: 100%!important;
+}
+
+li.ssm-card h2 {
+    margin-bottom: 15px!important;
+    margin-top: 7px!important;
+    text-align: center!important;
+}
+
+li.ssm-card button.btn {
+    display: block!important;
+    width: calc(100% - 30px)!important;
+    background: #6c2eb9!important;
+    border-width: 0!important;
+    margin-left: 15px!important;
+    margin-right: 15px!important;
+    margin-bottom: 15px!important;
+    font-weight: bold!important;
+    text-transform: uppercase!important;
+    color: #fff!important;
+    font-size:  15px!important;
+    padding-top: 10px!important;
+    padding-bottom: 10px!important;
+    border-radius: 3px!important;
+}
