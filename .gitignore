@@ -5,11 +5,11 @@
 !wp-content/
 
 # Ignore everything in the "wp-content" directory, except the "themes" directory.
-./wp-content/
+wp-content/*
 !wp-content/themes/
 
 # Ignore themes unless otherwise specified.
-./wp-content/themes/
+wp-content/themes/*
 !wp-content/themes/earthstrike
 !wp-content/themes/Divi
 !wp-content/themes/divi-child-theme
