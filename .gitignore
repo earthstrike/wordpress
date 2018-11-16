@@ -1,7 +1,8 @@
-# Ignore everything in the root except the "wp-content" directory, root readme, and gitignore.
+# Ignore everything in the root except the "wp-content" directory, root readme, package.json, and gitignore.
 /*
 !.gitignore
 !README.md
+!package.json
 !wp-content/
 
 # Ignore everything in the "wp-content" directory, except the "themes" directory.
