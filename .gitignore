@@ -5,7 +5,7 @@
 !wp-content/
 
 # Ignore everything in the "wp-content" directory, except the "themes" directory.
-wp-content/*
+wp-content/
 !wp-content/themes/
 
 # Ignore themes unless otherwise specified.
