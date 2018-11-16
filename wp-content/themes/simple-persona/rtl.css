@@ -1,0 +1,253 @@
+/*
+Theme Name: Simple Personal Theme
+Description: Adds support for languages written in a Right To Left (RTL) direction.
+It's easy, just a matter of overwriting all the horizontal positioning attributes
+of your CSS stylesheet in a separate stylesheet file named rtl.css.
+
+See: https://codex.wordpress.org/Right_to_Left_Language_Support
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+
+# Normalize
+# Elements
+# Navigation
+	## Menus
+# Widgets
+# Content
+# Footer
+# Comments
+# Layout
+	## Events Section
+# Media Queries
+	## >= 667px
+	## >= 1024px
+
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Normalize
+--------------------------------------------------------------*/
+
+body {
+	direction: rtl;
+	unicode-bidi: embed;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+	margin-right: auto;
+	margin-left: 0.4375em;
+}
+
+/*--------------------------------------------------------------
+# Elements
+--------------------------------------------------------------*/
+
+blockquote {
+	border-left: 0;
+	border-right: 3px solid #ea723d;
+	padding: 0 25px 0 0;
+}
+
+blockquote.alignleft {
+	border-left: 3px solid #ea723d;
+	border-right: 0;
+}
+
+li > ul,
+li > ol {
+	margin-right: 1.5em;
+}
+
+th {
+	text-align: right;
+}
+
+/*--------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------*/
+
+.main-navigation .menu-item-has-children > a,
+.main-navigation .page_item_has_children > a {
+    margin-left: 46px;
+    margin-right: 0;
+}
+
+.dropdown-toggle {
+	left: 0;
+	right: auto;
+}
+
+.main-navigation ul ul {
+	margin-left: 0;
+	margin-right: 0.875em;
+}
+
+.menu-toggle .icon {
+	margin-left: 9px;
+}
+
+.search-submit {
+	left: 0;
+	right: auto;
+}
+
+/*--------------------------------------------------------------
+# Widgets
+--------------------------------------------------------------*/
+
+.widget_categories ul,
+.widget_archive ul {
+    text-align: left;
+}
+
+.widget_categories ul a,
+.widget_archive ul a {
+	float: right;
+}
+
+/*--------------------------------------------------------------
+# Content
+--------------------------------------------------------------*/
+
+.content-area .entry-footer .cat-links a,
+.content-area .entry-footer .tags-links a {
+	margin: 0 0 10px 10px;
+}
+
+/*--------------------------------------------------------------
+## Comments
+--------------------------------------------------------------*/
+
+.comment-list .children > li {
+	padding-left: 0;
+	padding-right: 0.875em;
+}
+
+.comment-author .avatar {
+    float: right;
+    margin-left: 25px;
+    margin-right: 0;
+}
+
+.comment-author {
+	margin: 0 0 14px 21px;
+}
+
+.reply,
+.comment-content {
+    margin-top: 14px;
+    margin-right: 100px;
+    margin-left: 0;
+}
+
+/*--------------------------------------------------------------
+# Layout
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+## Events Section
+--------------------------------------------------------------*/
+
+#events-section .view-more {
+	text-align: right;
+}
+
+/*--------------------------------------------------------------
+## Media Queries
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+## >= 667px
+--------------------------------------------------------------*/
+
+@media screen and (min-width: 41.6875em) {
+	#hero-section .view-more {
+	    text-align: right;
+	}
+
+	#events-section .wrap,
+	#events-section .view-more {
+		padding-right: 28px;
+	    padding-left: 0;
+	}
+
+	.content-align-left#hero-section .has-post-thumbnail .post-thumbnail,
+	.content-align-left#hero-section .has-post-thumbnail .entry-container, 
+	.excerpt-image-left .has-post-thumbnail .hentry-inner .post-thumbnail,
+	.excerpt-image-left .has-post-thumbnail .hentry-inner .entry-container {
+		direction: rtl;
+	}
+
+	.content-align-left#hero-section .has-post-thumbnail .entry-container,
+	.content-align-right#hero-section .has-post-thumbnail .post-thumbnail,	
+	.excerpt-image-left .has-post-thumbnail .hentry-inner .post-thumbnail,
+	.excerpt-image-right .has-post-thumbnail .hentry-inner .entry-container {
+		-webkit-box-ordinal-group: 3;
+		-webkit-order: 2;
+		-moz-box-ordinal-group: 3;
+		-ms-flex-order: 2;
+		order: 2;
+	}
+
+	.content-align-left#hero-section .has-post-thumbnail .post-thumbnail,
+	.content-align-right#hero-section .has-post-thumbnail .entry-container,	
+	.excerpt-image-left .has-post-thumbnail .hentry-inner .entry-container,
+	.excerpt-image-right .has-post-thumbnail .hentry-inner .post-thumbnail {
+		-webkit-box-ordinal-group: 2;
+		-webkit-order: 1;
+		-moz-box-ordinal-group: 2;
+		-ms-flex-order: 1;
+		order: 1;
+	}
+}
+
+/*--------------------------------------------------------------
+## >= 1024px
+--------------------------------------------------------------*/
+
+@media screen and (min-width: 64em) {
+	.main-navigation .menu-item-has-children > a,
+	.main-navigation .page_item_has_children > a {
+	    margin-left: 0;
+	}
+
+	.main-navigation ul li {
+	    margin-left: 21px;
+		margin-right: 0;
+	}
+
+	.main-navigation ul ul {
+	    margin-right: 0;
+	}
+
+	.main-navigation ul ul li {
+		margin-left: 0;
+	    margin-right: 0;
+	}
+
+	.main-navigation .menu-item-has-children > a > .icon,
+	.main-navigation .page_item_has_children > a > .icon {
+	    right: 5px;
+	}
+
+	.main-navigation ul ul .menu-item-has-children > a > .icon,
+	.main-navigation ul ul .page_item_has_children > a > .icon {
+		left: 14px;
+		right: auto;
+	}
+}
+
+/*--------------------------------------------------------------
+## >= 1200px
+--------------------------------------------------------------*/
+
+@media screen and (min-width: 75em) {
+	.custom-logo-link {
+	    margin-left: 14px;
+	    margin-bottom: 0;
+	}
+}
