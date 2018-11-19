@@ -86,10 +86,12 @@ input:focus {
 	margin:0 auto;
 	position:relative;
 }
+
 /* header */
 .header {
 
 }
+
 /* logo */
 .logo {
 
@@ -97,6 +99,7 @@ input:focus {
 .logo-img {
 
 }
+
 /* nav */
 .nav {
 	display: inline-flex;
@@ -125,7 +128,7 @@ input:focus {
 }
 
 .nav[role="navigation"] {
-	margin-left: 300px;
+	// margin-left: 300px;
 }
 
 /* sidebar */
