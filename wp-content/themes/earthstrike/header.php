@@ -12,33 +12,41 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="<?php bloginfo('description'); ?>">
 
-		<!-- Bootstrap -->
+		<!-- Bootstrap (TODO: serve from site)-->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+		<!-- fonts (TODO: serve from site)-->
+		<link href="https://fonts.googleapis.com/css?family=Work+Sans:400,600" rel="stylesheet"> 
 
 		<?php wp_head(); ?>
 		<script>
-        // conditionizr.com
-        // configure environment tests
-        conditionizr.config({
-            assets: '<?php echo get_template_directory_uri(); ?>',
-            tests: {}
-        });
-        </script>
+			// conditionizr.com
+			// configure environment tests
+			conditionizr.config({
+					assets: '<?php echo get_template_directory_uri(); ?>',
+					tests: {}
+			});
+		</script>
 
 	</head>
+
 	<body <?php body_class(); ?>>
+
+		<!-- header -->
+		<header class="header clear" role="banner">
+
+			<!-- logo -->
+			<a href="<?php echo get_site_url(); ?>" alt="<?php bloginfo('name'); ?>"><img id="logo" src="<?php echo get_template_directory_uri().'/dist/img/es-logo.png'; ?>"></a>
+			<!-- /logo -->
+
+			<!-- nav -->
+			<nav class="nav" role="navigation">
+				<?php wp_nav_menu('header'); ?>
+			</nav>
+			<!-- /nav -->
+
+		</header>
+		<!-- /header -->
 
 		<!-- wrapper -->
 		<div class="wrapper">
-
-			<!-- header -->
-			<header class="header clear" role="banner">
-
-					<!-- nav -->
-					<nav class="nav" role="navigation">
-						<?php html5blank_nav(); ?>
-					</nav>
-					<!-- /nav -->
-
-			</header>
-			<!-- /header -->
