@@ -27,6 +27,19 @@ src
 	* [Template heirarchy](https://developer.wordpress.org/themes/basics/template-hierarchy/)
 * Reach out to @avinoamsn with any questions.
 
+### WordPress theming
+
+Developing within the WP framework can seem daunting (or frustratingly limiting) at first, but once you wrap your head around the [WP template heirarchy](https://developer.wordpress.org/themes/basics/template-hierarchy/) and the [theme development guide](https://codex.wordpress.org/Theme_Development) (<- this one can take some time) things become a lot more intuitive. Our website is being built using the the [HTML5Blank](http://html5blank.com/) boilerplate, and I'll document some of the important things to know below. (TODO) If you have any questions, please reach out to me (@avinoamsn).
+
+* don't change the gitignore
+* the package.json is in the wordpress root folder, which is where the node_modules dir will be installed
+* header.php, footer.php, etc
+* the best way to identify where different elements are getting their styles from is to use the inspector in the browser
+* below is the features list from the default HTML5Blank readme
+* TODOs
+	* would be great if we served bootstrap & fonts from our site, rather than CDNs
+	* for some reason, the justify-content in the header isn't behaving like it's supposed to: space-between is behaving like space-around (see [this](https://css-tricks.com/snippets/css/a-guide-to-flexbox/))
+
 ## HTML5Blank Features
 
 ### HTML5

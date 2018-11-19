@@ -1,0 +1,69 @@
+{
+	"_comment":"TODO: fix sprite generator. removed this script from \"icons\": \"&& svg-sprite-generate -d wp-content/themes/earthstrike/dist/img/icons -o wp-content/themes/earthstrike/dist/img/icons/sprite.svg\" ",
+	"_comment1":"bootstrap module & dependencies are currently unused",
+  "name": "earthstrike",
+  "version": "0.0.1",
+  "description": "Earth Strike Website",
+  "main": "js/scripts.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rimraf {*.css,js/*,img/*}",
+    "autoprefixer": "postcss -u autoprefixer -r wp-content/themes/earthstrike/dist/css/*",
+		"scss": "node-sass --output-style compressed -o wp-content/themes/earthstrike/dist/css/ wp-content/themes/earthstrike/src/scss/",
+		"lint": "eslint wp-content/themes/earthstrike/src/js || true",
+    "lint-scss": "stylelint wp-content/themes/earthstrike/src/scss/*.scss --syntax scss || true",
+    "uglify": "mkdirp wp-content/themes/earthstrike/dist/js -p && uglifyjs wp-content/themes/earthstrike/src/js/*.js -m -o wp-content/themes/earthstrike/dist/js/app.js && uglifyjs wp-content/themes/earthstrike/src/js/*.js -m -c -o wp-content/themes/earthstrike/dist/js/app.min.js",
+    "imagemin": "imagemin wp-content/themes/earthstrike/src/img/* -o wp-content/themes/earthstrike/dist/img",
+    "icons": "svgo -f wp-content/themes/earthstrike/src/img/svg -o wp-content/themes/earthstrike/dist/img/svg",
+    "build:css": "run-s lint-scss scss autoprefixer",
+    "build:js": "run-s lint uglify",
+    "build:img": "run-s imagemin icons",
+    "build": "run-s build:*",
+    "watch:css": "onchange \"wp-content/themes/earthstrike/src/scss\" -- run-s build:css",
+    "watch:js": "onchange \"wp-content/themes/earthstrike/src/js\" -- run-s build:js",
+    "watch:img": "onchange \"wp-content/themes/earthstrike/src/img\" -- run-s build:img",
+		"watch": "run-p watch:*",
+		"postinstall": "run-s build watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/earthstrike/wordpress.git"
+  },
+  "keywords": [
+    "earth",
+    "strike",
+    "website"
+  ],
+  "author": "Earth Strike Team",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/earthstrike/wordpress/issues"
+  },
+  "homepage": "https://github.com/earthstrike/wordpress#readme",
+  "dependencies": {
+    "bootstrap": "^4.1.3",
+    "jquery": "^3.3.1",
+    "node-sass": "^4.9.3",
+    "popper.js": "^1.14.5"
+  },
+  "devDependencies": {
+		"autoprefixer": "^9.1.1",
+    "eslint": "^5.3.0",
+    "eslint-config-jquery": "^1.0.1",
+    "imagemin-cli": "^3.0.0",
+    "npm-run-all": "^4.1.3",
+    "onchange": "^4.1.0",
+    "postcss-cli": "^6.0.0",
+    "svg-sprite-generator": "0.0.7",
+    "svgo": "^1.0.5",
+    "uglify-js": "^3.4.7"
+	},
+  "eslintConfig": {
+    "env": {
+      "jquery": true
+    },
+    "rules": {
+      "no-console": 0
+    }
+  }
+}
