@@ -9,7 +9,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "rimraf {*.css,js/*,img/*}",
     "autoprefixer": "postcss -u autoprefixer -r wp-content/themes/earthstrike/dist/css/*",
-		"scss": "node-sass --output-style compressed -o wp-content/themes/earthstrike/wp-content/themes/earthstrike/dist/css/ wp-content/themes/earthstrike/src/scss/",
+		"scss": "node-sass --output-style compressed -o wp-content/themes/earthstrike/dist/css/ wp-content/themes/earthstrike/src/scss/",
 		"lint": "eslint wp-content/themes/earthstrike/src/js || true",
     "lint-scss": "stylelint wp-content/themes/earthstrike/src/scss/*.scss --syntax scss || true",
     "uglify": "mkdirp wp-content/themes/earthstrike/dist/js -p && uglifyjs wp-content/themes/earthstrike/src/js/*.js -m -o wp-content/themes/earthstrike/dist/js/app.js && uglifyjs wp-content/themes/earthstrike/src/js/*.js -m -c -o wp-content/themes/earthstrike/dist/js/app.min.js",

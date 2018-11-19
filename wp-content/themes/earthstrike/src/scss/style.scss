@@ -12,6 +12,12 @@
 */
 
 /*------------------------------------*\
+    VARIABLES
+\*------------------------------------*/
+
+$header-background-color: #292a35;
+
+/*------------------------------------*\
     MAIN
 \*------------------------------------*/
 
@@ -30,7 +36,8 @@ html {
 	font-size:62.5%;
 }
 body {
-	font:300 11px/1.4 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	// font:300 11px/1.4 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-family: 'Work Sans', sans-serif;
 	color:#444;
 }
 /* clear */
@@ -80,6 +87,7 @@ input:focus {
 \*------------------------------------*/
 
 /* wrapper */
+// applied after header & before footer (only applies to page content)
 .wrapper {
 	max-width:1280px;
 	width:95%;
@@ -89,56 +97,54 @@ input:focus {
 
 /* header */
 .header {
+	display: flex;
+	justify-content: space-between; // this is behaving like space-around, not sure why
+	align-items: center;
+	background-color: $header-background-color;
 
-}
+	#logo {}
 
-/* logo */
-.logo {
+	/* nav */
+	.nav {
+		line-height: 85px;
+		
+		font-size: 17px;
+		font-weight: 600;
+		text-transform: uppercase;
 
-}
-.logo-img {
+		transition: 0.3s;
 
-}
+		ul {
+			list-style-type: none; // remove bullets
+			padding: 0; // remove default padding
+			margin: 0; // remove defaut margin
 
-/* nav */
-.nav {
-	display: inline-flex;
-	flex-wrap: nowrap;
-	line-height: 85px;
-	
-	color: #282f5d;
-	font-size: 15px;
-	text-transform: uppercase;
+			li {
+				display: inline;
 
-	transition: 0.3s;
-}
+				a {
+					padding: 0px 20px;
+				
+					font-weight: 600;
+					color: rgba(255,255,255,1);
+				
+					transition: 0.3s;
+				}
 
-.nav a {
-	padding: 0px 20px;
-
-	font-weight: 600;
-	color: #282f5d;
-
-	transition: 0.3s;
-}
-
-.nav a:hover {
-    color: white;
-    background-color: #282f5d;
-}
-
-.nav[role="navigation"] {
-	// margin-left: 300px;
+				a:hover {
+					color: rgba(255,255,255,.7);
+					text-decoration: none; // disable underline
+				}
+			}
+		}
+	}
 }
 
 /* sidebar */
-.sidebar {
+.sidebar {}
 
-}
 /* footer */
-.footer {
-
-}
+.footer {}
 
 /*------------------------------------*\
     PAGES
