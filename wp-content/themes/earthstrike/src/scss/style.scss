@@ -80,7 +80,55 @@ input:focus {
     SPLASH PAGE (front-page.php)
 \*------------------------------------*/
 
+#banner { // much of this is lifted from es.letstalkthis.com styling
+	min-width: 100%;
 
+	padding-top: 95px;
+
+	background: linear-gradient(
+		180deg,
+		rgba(175,173,209,0.61) 0%,
+		rgba(63,58,76,0.63) 100%
+	), url(../img/es-banner.jpg); // linear-gradient is necessary for color overlay
+	background-size: cover;
+
+	div#text-parent {
+		padding-top: 27px;
+		padding-bottom: 117px;
+	
+		div#text {
+			display: table;
+			margin: auto;
+
+			div#es-parent{
+				background-color: #387740;
+
+				h1#es {
+					margin: 0 15px;
+					
+					font-family: 'Passion One', display;
+					font-weight: 700;
+					text-transform: uppercase;
+					font-size: 100px;
+					color: #fff;
+					letter-spacing: 7px;
+				}
+			}
+
+			p#subhead {
+				width: 659px;
+				padding: 20px 0 0 0;
+
+				font-family: 'Raleway',Helvetica,Arial,Lucida,sans-serif;
+				font-size: 28px;
+				line-height: 1.4em;
+				color: #fff;
+
+				text-align: center;
+			}
+		}
+	}
+}
 
 /*------------------------------------*\
     STRUCTURE
