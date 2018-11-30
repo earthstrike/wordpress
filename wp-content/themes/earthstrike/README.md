@@ -39,7 +39,6 @@ Developing within the WP framework can seem daunting (or frustratingly limiting)
 	* [WP Theming Handbook](https://developer.wordpress.org/themes/getting-started/)
 	* [Template heirarchy](https://developer.wordpress.org/themes/basics/template-hierarchy/)
 * Reach out to @avinoamsn with any questions.
-
 * don't change the gitignore
 * the package.json is in the wordpress root folder, which is where the node_modules dir will be installed
 * header.php, footer.php, etc
