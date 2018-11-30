@@ -1,6 +1,6 @@
 # [Earth Strike Custom WP Theme](http://earthstrike.org)
 
-Please view the readme in the [earthstrike theme folder](https://github.com/EarthStrike/wordpress/tree/themes-only/wp-content/themes/earthstrike).
+Please view the readme in the [earthstrike theme folder](https://github.com/EarthStrike/wordpress/tree/master/wp-content/themes/earthstrike).
 
 ## [HTML5Blank](http://html5blank.com/) Features
 
