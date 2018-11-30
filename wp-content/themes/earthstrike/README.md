@@ -32,7 +32,7 @@ All source is compiled into the *dist/* directory, which has an identical struct
 
 #### WordPress theming
 
-Developing within the WP framework can seem daunting (or frustratingly limiting) at first, but once you wrap your head around the [WP template heirarchy](https://developer.wordpress.org/themes/basics/template-hierarchy/) and the [theme development guide](https://codex.wordpress.org/Theme_Development) (<- this one can take some time) things become a lot more intuitive. Our website is being built using the the [HTML5Blank](http://html5blank.com/) ((feature list))[https://github.com/EarthStrike/wordpress] boilerplate, and I'll document some of the important things to know below. If you have any questions, please reach out to @avinoamsn.
+Developing within the WP framework can seem daunting (or frustratingly limiting) at first, but once you wrap your head around the [WP template heirarchy](https://developer.wordpress.org/themes/basics/template-hierarchy/) and the [theme development guide](https://codex.wordpress.org/Theme_Development) (<- this one can take some time) things become a lot more intuitive. Our website is being built using the the [HTML5Blank](http://html5blank.com/) [(feature list)](https://github.com/EarthStrike/wordpress) boilerplate, and I'll document some of the important things to know below. If you have any questions, please reach out to @avinoamsn.
 
 * Some good resources for understanding WP custom themes:
 	* [WP Codex entry for theme development](https://codex.wordpress.org/Theme_Development)
