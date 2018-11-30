@@ -15,7 +15,7 @@
 
 ### How-to (read this)
 
-The src directory architecture looks like this:
+The src directory structure looks like this:
 
 ```
 src
@@ -25,9 +25,10 @@ src
 └scss
 ```
 
-Watch image/scss/js files with `npm run watch`.
-* All of the tooling is done using npm, in a manner akin to [this guide](https://css-tricks.com/why-npm-scripts/). (Simple, fast, and you never have to use the word *piping*.) Check *package.json* to see the other npm scripts.
-* You **MUST** run one of the npm build scripts to compile your `src/` code into one of the `dist/` folders that the theme actually uses. (This is done passively with `npm run watch`.)
+* All source is compiled into the *dist/* directory, which has an identical structure.
+* Watch image/scss/js files with `npm run watch`.
+	* All of the tooling is done using npm, in a manner akin to [this guide](https://css-tricks.com/why-npm-scripts/). (Simple, fast, and you never have to use the word *piping*.) Check *package.json* to see the other npm scripts.
+	* You **MUST** run one of the npm build scripts to compile your `src/` code into one of the `dist/` folders that the theme actually uses. (This is done passively with `npm run watch`.)
 
 #### WordPress theming
 
